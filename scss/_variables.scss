@@ -1,0 +1,21 @@
+//~container-width
+$screen-xs-max: 480px;
+$screen-sm-min: ($screen-xs-max + 1);
+$screen-sm-max: 768px;
+$screen-md-min: ($screen-sm-max + 1);
+$screen-md-max: 1023px;
+$screen-lg-min: ($screen-md-max + 1);
+$screen-xlg-min: 1205px;
+
+/*spacer*/
+$bc-spacer-5: 5px;
+$bc-spacer-10: 10px;
+$bc-spacer-20: 20px;
+$bc-spacer-30: 30px;
+$bc-spacer-40: 40px;
+$bc-spacer-50: 50px;
+$bc-spacer-60: 60px;
+$bc-spacer-70: 70px;
+$bc-spacer-80: 80px;
+$bc-spacer-90: 90px;
+$bc-spacer-100: 100px;

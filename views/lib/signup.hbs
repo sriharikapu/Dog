@@ -1,0 +1,17 @@
+<div 
+	class="modal fade signup {{ role }}" 
+	id="{{ role }}-modal" 
+	role="dialog" 
+	aria-hidden="true" 
+	style="display: none;"
+>
+	<div class="modal-header">
+		{{> close-button }}
+		<h1 class="v-center">
+			{{ title }}
+		</h1>
+	</div>
+	<div class="modal-dialog">
+		{{> signup-common }}		
+	</div>
+</div>

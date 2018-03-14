@@ -1,0 +1,44 @@
+//font-path
+@mixin font-family($font-family, $file-path ) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file-path}.ttf');
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+    url('#{$file-path}.ttf') format('truetype'),
+    url('#{$file-path}.svg##{$font-family}') format('svg');
+  }
+}
+
+//Fonts
+@include font-family('Open-sans-r', '../fonts/Open_Sans/OpenSans-Regular');
+@include font-family('Open-sans-l', '../fonts/Open_Sans/OpenSans-Light');
+@include font-family('Open-sans-b', '../fonts/Open_Sans/OpenSans-Bold');
+
+@include font-family('Raleway-r', '../fonts/Raleway/Raleway-Regular');
+@include font-family('Raleway-l', '../fonts/Raleway/Raleway-Light');
+@include font-family('Raleway-b', '../fonts/Raleway/Raleway-Bold');
+
+
+// font-awsome-icons
+@mixin bc-icon-font($content, $color, $font-size){
+    content: $content;
+    font: normal normal normal $font-size FontAwesome;
+    text-decoration: inherit;
+    color: $color;
+    text-transform: none;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+// Transition-effects
+@mixin ci-transition($property: all, $duration: 500ms, $timing: ease-in-out, $delay: 0ms) {
+  transition: $property $duration;
+  -webkit-transition: $property $duration;
+  -moz-transition: $property $duration;
+  -ms-transition: $property $duration;
+  -o-transition: $property $duration;
+}
+
+

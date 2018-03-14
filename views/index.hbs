@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VOV - Voice of Voiceless</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	{{> header }}
+	 <!-- 	<ul id="nav">
+	  <li><a href="#section-1" class="js-anchor-link">Section 1</a></li>
+	  <li><a href="#section-2" class="js-anchor-link">Section 2</a></li>
+	  <li><a href="#section-3" class="js-anchor-link">Section 3</a></li>
+	</ul> -->
+    <section id="section-1" class="section">
+        <div class="container">
+            <div class="row">
+            	<div class="col-md-3">
+            		<div class="logo-wrapper">
+            			<img id="logo" class="v-logo" src="images/logo.svg" alt="whistleblowers">
+            		</div>
+            	</div>
+                <div class="col-md-6">
+                    <div class="section-wrapper">
+                        <p class="v-pera v-center" style="margin-top:2em; font-family: ">
+                           No one can do everything but everyone can do something. Be a leader and Take action now!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	{{#unless session.loggedIn }}
+    <section id="section-2" class="section">
+        <div class="section-wrapper">
+            <h1 class="v-center">What’s your role?</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sectors">
+                            <div class="icon icon-wrapper">
+                                <img id="sectors" class="whistleblowers" src="images/1.svg" alt="whistleblowers">
+                            </div>
+                            <div class="bc-btn bc-btn-default"
+								data-toggle="modal" 
+								data-target="#report-modal"
+							>
+                                WHISTLEBLOWER
+                            </div>
+                            <p class="v-center">
+                            	Witnessed something and want to report here
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sectors">
+                            <div class="icon icon-wrapper">
+                                 <img id="sectors" class="watchdog" src="images/2.svg" alt="watchdog">
+                            </div>
+                            <div class="bc-btn bc-btn-default"
+								data-toggle="modal" 
+								data-target="#watch-modal"
+							>
+                                WATCH DOG
+                            </div>
+                            <p class="v-center">
+                            	Are you part of an non for profit organisation that battles agaisnt human trafficking?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sectors">
+                            <div class="icon icon-wrapper">
+                                <img id="sectors" class="research" src="images/3.svg" alt="Research">
+                            </div>
+                            <div class="bc-btn bc-btn-default"
+								data-toggle="modal" 
+								data-target="#research-modal"
+							>
+                                Research
+                            </div>
+                            <p class="v-center">
+                            	Upload and share your studies for human trafficking to help watchdogs fight the bad guys.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sectors">
+                            <div class="icon icon-wrapper">
+                                <img id="sectors" class="donate" src="images/4.svg" alt="Donate">
+                            </div>
+                            <div class="bc-btn bc-btn-default" 
+								data-toggle="modal" 
+								data-target="#donate-modal"
+							>
+                                Donate
+                            </div>
+                            <p class="v-center">
+                            	You can make a difference by donating to continue assist in solving trafficking cases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/unless}}
+    <section id="section-3" class="section">
+        <h1 class="v-center">What’s happening?</h1>
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-8">
+        			<div class="map-wrapper">
+        				<img id="v-maps" class="v-maps" src="images/event.jpg" alt="maps">
+        				<div id="map"></div>
+        			</div>
+        		</div>
+        		<div class="col-md-4">
+        			<div class="form-group v-search">
+					  <input type="text" placeholder="Your location" class="form-control test" id="v-search">
+					</div>
+        			<div class="bc-list-wrapper search-result">
+        				<ul class="bc-list-item">
+        				<li class="bc-list v-one">Location</a></li>
+        				<li class="bc-list v-two">Domestic Servitude</li>
+        				<li class="bc-list v-three">Sex Trafficking</li>
+        				<li class="bc-list v-four">Forced Labor</li>
+        				<li class="bc-list v-five">Bonded Labor</li>
+        				<li class="bc-list v-six">Child Labor</li>
+        			</ul>
+					
+	
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </section>
+	<section id="section-4" class="section">
+   	<div class="section-wrapper">
+   		          <h1 class="v-center">Current Issues</h1>
+          <div class="container">
+        	<div class="row">
+        		<div class="col-md-4">
+        			<div class="news-wrap">
+        			<h3>After 3800 deaths in Malaysia, Nepal seeks causes</h3>
+        			<p>
+        				For Nepali migrant workers, Malaysia has nearly everything to make them feel at home. The climate in the Southeast Asian country is far more pleasant than the searing heat of the Gulf. Malaysians, whether native Malay or minority groups of Chinese and Indian origin, have familiar facial features, food habits and cultures. Like in Nepal, rice and curry are widely popular across Malaysia.
+						<a class="c-gray read-more" href="">Read more..</a>
+        			</p>
+        			</div>
+        		</div>
+        		<div class="col-md-4">
+        			<div class="news-wrap">
+        				      			<h3>South African woman rescued from sex-trafficking ring in Malaysia</h3>
+        				        			<p>
+        				Tape Town – A 24-year-old Bloemfontein woman has been rescued from a suspected sex-trafficking enterprise in Malaysia, and is expected to return home to South Africa by Monday.
+
+Minister of Police Fikile Mbalula said on Friday evening that the woman had been lured to Malaysia under the false impression that she would take part in a model competition.
+						<a class="c-gray read-more" href="">Read more..</a>
+        			</p>
+        			</div>
+ 
+        		</div>
+        		<div class="col-md-4">
+        			<div class="news-wrap">
+        				<h3>Free State woman saved from sex traffickers and organ harvesters in Malaysia</h3>
+        			<p>
+        				A joint operation between the South African Police Service, the Hawks and Interpol resulted in the rescue of a number female victims from a suspected global human trafficking syndicate.
+
+A 24-year-old South African woman was among those rescued on Friday from the suspected syndicate in Malaysia.
+
+Police Minister Fikile Mbalula said the Bloemfontein resident was lured by a modelling competition online.
+
+						<a class="c-gray read-more" href="">Read more..</a>
+        			</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+   	</div>
+    </section>
+	
+	{{> login }}
+	{{> report }}
+	{{> signup 
+		role="donate" title="Sign up and donate" 
+		form="donor-researcher"
+	}}
+	{{> signup 
+		role="research" title="Sign up and share your work" 
+		form="donor-researcher"
+	}}
+	{{> signup 
+		role="watch" title="Be a Watchdog" 
+		form="watchdog"
+	}}
+</body>
+</html>

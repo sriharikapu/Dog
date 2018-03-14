@@ -1,0 +1,14 @@
+<div class="login-buttons">
+	<button class="fb-signup signup-btn bc-btn-facebook" data-usertype="{{ role }}">
+		Sign up with Facebook
+	</button>
+	<button class="google-signup signup-btn bc-btn-google" data-usertype="{{ role }}">
+		Sign up with Google
+	</button>
+</div>
+	{{> (lookup . 'form') }}
+<div class="login-buttons">
+	<button class="local-signup  signup-btn bc-btn-primary" data-usertype="{{ role }}">
+		Submit
+	</button>
+</div>

@@ -1,0 +1,55 @@
+{
+  "name": "vov",
+  "version": "1.0.0",
+  "description": "ADVOC",
+  "main": "index.html",
+  "scripts": {
+    "test": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasfathr/vov.git"
+  },
+  "author": "team vov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasfathr/vov/issues"
+  },
+  "homepage": "https://github.com/nasfathr/vov#readme",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "browserify-shim": "^3.8.14",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-live-server": "0.0.31",
+    "gulp-sass": "^3.1.0",
+    "gulp-template": "^4.0.0",
+    "node-font-awesome": "^1.0.2",
+    "node-normalize-scss": "^3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "express-hbs": "^1.0.4",
+    "express-session": "^1.15.4",
+    "gulp-live-server": "0.0.31",
+    "jquery": "^3.2.1",
+    "lowdb": "^0.16.2",
+    "session-file-store": "^1.1.1"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "bootstrap": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

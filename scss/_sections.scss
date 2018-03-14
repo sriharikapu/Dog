@@ -1,0 +1,172 @@
+.section{
+
+    .bc-btn-default:hover, .bc-btn-default:active{
+        background: $bc-orange;
+        border:1px solid $bc-orange;
+        transition: background-color 0.5s ease;
+    }
+
+}
+
+#section-1{
+    background: $bc-primary-color;
+    height:300px;
+
+    p{
+        font-size:$bc-spacer-20;
+    }
+
+}
+
+.section-wrapper{
+    padding: $bc-spacer-70 + 5 0;
+}
+
+.v-center{
+    text-align:center;
+}
+
+#section-2{
+    background: $bc-secondary-color;
+	
+	.section-wrapper {
+		padding-bottom: 0px;
+	}
+
+    h1{
+        color: $bc-blue-10;
+    }
+
+    .bc-btn-default{
+        margin-top:$bc-spacer-20;
+        text-align: center;
+        min-width:200px;
+        margin-bottom:$bc-spacer-10 + 5;
+        margin-left:$bc-spacer-30;
+    }
+
+}
+
+#section-3{
+    background: $bc-secondary-color;
+	padding-top: $bc-spacer-70 + 5;
+
+    h1{
+        color: $bc-primary-color;
+    }
+
+    .bc-btn-default{
+        margin-top:$bc-spacer-20;
+        text-align: center;
+        min-width:200px;
+        margin-bottom:$bc-spacer-10 + 5;
+        margin-left:$bc-spacer-30;
+    }
+
+}
+
+#section-4{
+      h1{
+        color: $bc-blue-10;
+    }
+    p{
+        color: $bc-gray;
+    }
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+    background: $bc-primary-color;
+    border-radius: 150px;
+
+
+    .fa{
+                font-size: 90px;
+    margin-left: 31px;
+    text-align: center;
+    margin-top: 26px;
+    }
+
+    &.icon-wrapper{
+        margin-left:50px;
+    }
+}
+
+.v-language.pull-right {
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.map-wrapper {
+    width: 659px;
+    height: 379px;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+ul.bc-list-item{
+    li {
+        padding: 15px 30px;
+
+        &:hover, &:active{
+                background: white;
+                border-radius: 12px;
+                transition: background-color 0.5s ease;
+                cursor:pointer;
+                color:$bc-gray;
+        }
+    }
+}
+
+
+.v-search{
+    input{
+        padding: 22px;
+        font-size: 16px;
+    }
+}
+
+.search-result{
+    opacity:0;
+    pointer-events: none; 
+    &.active{
+        opacity:1;
+        pointer-events: all; 
+    }
+}
+
+.read-more{
+    display:block;
+    margin-top: $bc-spacer-10 + 5;
+}
+
+.logo-wrapper {
+    margin-top: 90px;
+
+    .v-logo{
+        width:250px;
+    }
+}
+
+img#v-maps {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $bc-white;
+}
+
+#v-donate{
+    margin-top:30px;
+}
+
+.v-upload-but{
+    margin-bottom: 10px;
+}
+
+#section-1{
+    p{
+        font-family: $raleway-bold;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,16 @@
+
+/*font-family*/
+$open-regular: Open-sans-r;
+$open-light: Open-sans-l;
+$open-bold: Open-sans-b;
+
+$raleway-regular: Raleway-r;
+$raleway-light: Raleway-l;
+$raleway-bold: Raleway-b;
+
+/*fonts-sizes*/
+$font-size-base: 17px;
+$font-size-small: ceil(($font-size-base * 0.8235));// ~14px
+$font-size-medium: ceil(($font-size-base * 1.33));// ~24px
+$font-size-large: ceil(($font-size-base * 1.94));// ~35px
+$font-size-menu-head: ceil(($font-size-base * 2.66));// ~48px

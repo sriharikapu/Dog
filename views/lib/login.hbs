@@ -1,0 +1,32 @@
+<div 
+	class="modal fade login" 
+	id="login-modal" 
+	role="dialog" 
+	aria-hidden="true" 
+	style="display: none;"
+>
+	<div class="modal-header">
+		{{> close-button }}
+		<h1 class="v-center">
+			Log In
+		</h1>
+	</div>
+	<div class="modal-dialog">
+		{{> input text="Username" id="name" name="name" role="login" }}
+		{{> input text="Password" id="pass" name="pass" role="login" }}
+		<div class="login-buttons">
+			<button class="local-signup login-btn bc-btn-primary">
+				Log in
+			</button>
+		</div>
+		
+		<div class="login-buttons">
+			<button class="fb-signup login-btn bc-btn-facebook">
+				Log in with Facebook
+			</button>
+			<button class="google-signup login-btn bc-btn-google">
+				Log in with Google
+			</button>
+		</div>
+	</div>
+</div>

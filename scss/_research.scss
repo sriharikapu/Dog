@@ -1,0 +1,85 @@
+.research {
+	header {
+		color: #333333;
+		a {
+			color: #333333;
+		}
+	}
+
+	.bc-btn-default{
+	@include bc-button(5px 26px, $bc-gray, $font-size-base + 1, transparent, 50px);
+	border: 1px solid $bc-orange;
+
+	&:hover, &:active{
+		background: $bc-orange;
+		transition: background-color 0.5s ease;
+		color:$bc-white;
+	}
+}
+
+	label{
+		 color:$bc-gray;
+	}
+
+	.c-gray {
+		a {
+     color:$bc-gray;
+}
+		}
+	}
+
+	.research{
+		.list-item{
+			margin-top:$bc-spacer-50;
+			margin-bottom:$bc-spacer-30;
+
+			.item{
+				padding:$bc-spacer-10 + 5 0;
+
+				&:hover, &:active{
+                background: white;
+                transition: background-color 0.5s ease;
+                cursor:pointer;
+                color:$bc-gray;
+        }
+			}
+		}
+	}
+
+
+.prof-left{
+    background: $bc-secondary-color;
+    height:1200px;
+    padding:90px 0;
+}
+
+.prof-right{
+    h1{
+        color:$bc-gray;
+        margin-top:30px;
+    }
+
+
+}
+
+.ico-profile{
+    text-align: center;
+    .icon-wrapper{
+        font-size: 125px;
+    padding-top: 8px;
+    margin:0;
+    }
+
+
+}
+
+.user-name-wrap{
+    margin-top:20px;
+}
+
+
+.bc-button-wrap {
+    text-align: right;
+}
+
+

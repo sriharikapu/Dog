@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VOV - Voice of Voiceless</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- bootstrap -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body id="donate">
+	{{> header }}
+	<section class="section"><div class="container"><div class="row">
+		<div class="section-wrapper">
+			<h1 class="v-center">Make a donation.</h1>
+		</div>
+		<div class="profile pull-left">
+			<div class="ico-profile">
+				<i class="icon icon-wrapper fa fa-user" aria-hidden="true"></i>
+				<div class="user-name-wrap">
+					User Name
+				</div>
+			</div>
+		</div>
+		<div class="form pull-right">
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+				<input type="radio" name="amount" id="rm10" autocomplete="off">
+				RM10
+			  </label>
+			  <label class="btn btn-primary">
+				<input type="radio" name="amount" id="rm20" autocomplete="off">
+				RM20
+			  </label>
+			  <label class="btn btn-primary">
+				<input type="radio" name="amount" id="rm50" autocomplete="off">
+				RM50
+			  </label>
+			  <label class="btn btn-primary">
+				<input type="radio" name="amount" id="rm100" autocomplete="off">
+				RM100
+			  </label>
+			  <label class="btn btn-primary other">
+				<input type="radio" name="amount" id="other" autocomplete="off">
+				Other Amount
+			  </label>
+			</div>
+			<h2>
+				Payment Information
+			</h2>
+			{{> input text="Credit Card Number" name="cc" id="cc" role="donate" class="cc" }}
+			{{> input text="CVV" name="cvv" id="cvv" role="donate" class="cc cvv" }}
+			{{> input text="Expiration Date" name="date" id="date" role="donate" }}
+			<div class="login-buttons">
+				<button class="donate-btn bc-btn-primary">
+					Submit
+				</button>
+			</div>
+		</div>
+	</div></div></section>
+	<section class="section"><div class="container"><div class="row">
+		<div class="col-md-offset-3 col-md-6">
+					<img id="v-donate" class="v-watch-wrapper" src="images/donate-1.jpg" alt="watch">
+		</div>
+	</div></div>
+</section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.signup {
+	background-color: #F9F9F9;
+	color: #333333;
+	h1 {
+		margin-top: 60px;
+		font-family: $raleway-bold;
+		color: #27618C;
+	}
+	label {
+		display: block;
+		font-family: $raleway-bold;
+		font-size: 13px;
+	}
+	label, input,
+	.login-inputs,
+	.local-signup,
+	.google-signup,
+	.fb-signup {
+		width: 324px;
+	}
+	.local-signup {
+		height: 32px;
+	}
+	.google-signup,
+	.fb-signup {
+		height: 48px;
+	}
+	.login-inputs {
+		margin-top: 22px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.login-buttons {
+		text-align: center;
+	}
+	.modal-dialog {
+		width: 660px;
+	}
+}

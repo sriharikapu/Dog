@@ -1,0 +1,49 @@
+// buttons
+@mixin bc-button($padding, $color, $font-size, $background, $radius){
+	padding: $padding;
+	color: $color;
+	font-size: $font-size;
+	background: $background;
+	border-radius: $radius;
+}
+
+.bc-btn{
+	display: inline-block;
+	line-height: 1.428571;
+	touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+
+.bc-btn-default{
+	@include bc-button(5px 26px, white, $font-size-base + 1, transparent, 50px);
+	border: 1px solid $bc-white;
+	 cursor: pointer;
+}
+
+.bc-btn-primary{
+	@include bc-button(5px 26px, white, $font-size-base + 1, $bc-orange, 50px);
+	border-width:0px;
+	 cursor: pointer;
+}
+
+.bc-btn-secondory{
+	@include bc-button(5px 26px, white, $font-size-base + 1, #FE9030, 50px);
+	 cursor: pointer;
+}
+
+.bc-btn-facebook{
+	@include bc-button(5px 26px, white, $font-size-base + 1, #27618C, 50px);
+	border: 1px solid $bc-white;
+	 cursor: pointer;
+}
+
+.bc-btn-google{
+	@include bc-button(5px 26px, white, $font-size-base + 1, #D75A5A, 50px);
+	border: 1px solid $bc-white;
+	 cursor: pointer;
+}

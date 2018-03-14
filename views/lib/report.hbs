@@ -1,0 +1,58 @@
+<div 
+	class="modal fade report" 
+	id="report-modal" 
+	role="dialog" 
+	aria-hidden="true" 
+	style="display: none;"
+>
+	<div class="modal-header">
+		{{> close-button }}
+		<h1 class="v-center">
+			Saw something suspicious?
+		</h1>
+		<div class="encouragement">
+			You are a whistle-blower for a good cause.
+			Human trafficking, tell us when you see
+			suspected human trafficking activity.
+		</div>
+	</div>
+	<div class="modal-dialog">
+		<div class="form-group">
+			<select class="custom-select form-control" id="report-type">
+			  <option selected>Type of activity</option>
+			  <option value="1">Abduction</option>
+			  <option value="2">Forced labour</option>
+			  <option value="3">Child labour</option>
+			  <option value="4">Physical violence</option>
+			  <option value="5">Sex trafficking</option>
+			  <option value="6">Organ trafficking</option>
+			  <option value="7">Other</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="text" name="location" class="form-control" 
+				placeholder="Where did you see it happen?"
+			>
+		</div>
+		<div class="form-group">
+			<input type="text" name="location" class="form-control" 
+				placeholder="When did you see it?"
+			>
+		</div>
+		<div class="form-group">
+			<textarea type="text" name="location" class="form-control" 
+				placeholder="Any additional information?"
+			></textarea>
+		</div>
+		<div class="login-buttons v-upload-but">
+			<button class="local-signup report-btn bc-btn-primary">
+				Upload Documents
+			</button>
+		</div>
+		<div class="login-buttons">
+			<button class="local-signup report-btn bc-btn-primary">
+				Submit
+			</button>
+		</div>
+	</div>
+</div>

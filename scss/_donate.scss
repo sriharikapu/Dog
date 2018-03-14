@@ -1,0 +1,71 @@
+#donate {
+	background-color: #F9F9F9;
+	color: #333333;
+	a {
+		color: #333333;
+	}
+	.section-wrapper {
+		padding: 30px;
+	}
+	h1 {
+		margin-top: 20px;
+		font-family: $raleway-bold;
+	}
+	h2 {
+		margin: 0;
+		margin-bottom: 1em;
+	}
+	.icon {
+		color: #FFF;
+	}
+	.ico-profile {
+		margin-left: 240px;
+	}
+	section div.form.pull-right {
+		width: 600px;
+	}
+	.cc {
+		display: inline-block;
+	}
+	.cvv input {
+		width: 6em;
+	}
+	label {
+		display: block;
+		font-family: $raleway-bold;
+		font-size: 13px;
+	}
+	label, input,
+	.login-inputs,
+	.donate-btn {
+		width: 248px;
+	}
+	.btn-group {
+		textarea, input, button {
+			outline: none;
+			width: 0;
+			height: 0;
+		}
+		.btn {
+			background-color: #35BFC5;
+			border: 0px;
+		}
+		.btn.active {
+			background-color: #337ab7;
+		}
+		margin-bottom: 67px;
+		label {
+			width: 85px;
+			padding: 10px 0px;
+			margin: 5px;
+			border-radius: 10px;
+		}
+		label.other {
+			width: 120px;
+		}
+	}
+	select {
+		background-color: #27618C;
+		color: #FFF;
+	}
+}
